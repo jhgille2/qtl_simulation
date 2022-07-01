@@ -14,7 +14,9 @@ make_qtl_model <- function() {
   qtl_mod <- rbind(c(1, 50, 0.2), 
                    c(20, 30, 1), 
                    c(15, 45, 0.5), 
-                   c(4, 20, 0.05))
+                   c(4, 20, 0.05), 
+                   c(15, 80, 4), 
+                   c(2, 50, 0.75))
   
   return(qtl_mod)
 }
