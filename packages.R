@@ -8,5 +8,10 @@ pacman::p_load(conflicted,
                dotenv, 
                targets, 
                tarchetypes, 
-               tidyverse, 
-               qtl)
+               dplyr,
+               readr,
+               furrr, 
+               purrr, 
+               tidyr, 
+               qtl, 
+               snow)

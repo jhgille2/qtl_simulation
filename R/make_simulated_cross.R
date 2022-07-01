@@ -17,7 +17,9 @@ make_simulated_cross <- function(simulated_map, simulated_qtl_model) {
                                missing.prob = 0.05, 
                                map.function = "kosambi")
   
-  new_pheno_effects <- rnorm(10, sd = 5)
+  # Add 10 new "phenotypes" that are just the first simulated phenotype with 
+  # a number added to them
+  new_pheno_effects <- seq(1:10)
   for(i in 1:length(new_pheno_effects)){
     new_pheno_name <- paste("phenotype", i + 1, sep = "_")
     
